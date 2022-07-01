@@ -64,7 +64,7 @@ main{
 }
 
 .controls {
-    display: flex;
+    display: flex; 
     gap: 4rem;
 }
 
