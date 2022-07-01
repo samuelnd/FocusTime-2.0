@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #fff;
+}
+
+body {
+    font-size: 1.63rem;
+
+    background: var(--bg-color);
+}
+
+.lightMode, .darkMode {
+    position: absolute;
+    top: 2rem;
+    right: 23rem;
+
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.dark-theme-bg-text-body{
+    background-color: black;
+    color: white;
+
+    transition: 0.2s;
+  }
+
+main{
+    height: 100vh;
+    max-width: 105rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.left span {
+    font-size: 12.6rem;
+    font-family: 'Roboto', sans-serif;
+
+    margin-bottom: 4.8rem;
+}
+
+.left button, .row-1 button, .row-2 button{
+    background: none;
+    border: none;
+
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    gap: 4rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+}
+
+.row-1, .row-2 {
+    display: flex;
+    gap: 32px;
+}
+
+.forestNoSelect, 
+.forestSelect, 
+.rainSelect, 
+.rainNoSelect, 
+.coffeNoSelect, 
+.coffeSelect,
+.fireplaceSelect,
+.fireplaceNoSelect
+
+{
+    position: relative;
+}
+
+.range, .range-light, .rangeCoffe, .rangeFireplace {
+    -webkit-appearance: none;
+    width: 9rem;
+    height: .6rem;
+    background: #000;
+    border-radius: 9999px;
+    position: absolute;
+    bottom: 2.4rem;
+    right: 2.4rem;
+    
+  }
+
+  .rangeSelect, .rangeRain, .rangeCoffe, .rangeFireplace {
+    background: #fff;
+  }
+
+  svg  path.bg{
+    fill: #02799D;
+  }
+  .svg  path{
+    fill: white;
+  }
+
+  
+
+.forest input {
+    position: absolute;
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 7rem;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    main {
+        padding: 0 7rem;
+    }
+}
